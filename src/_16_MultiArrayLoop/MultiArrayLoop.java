@@ -28,5 +28,33 @@ public class MultiArrayLoop {
             }
             System.out.println();
         }
+
+
+
+
+        int num = 1;
+        int[][] array = new int[3][3];
+        for(int i = 0; i < array.length; i++) {
+            for(int j = 0; j < array[i].length; j++) {
+                array[i][j] = num;
+                num += 2;
+            }
+        }
+
+        for(int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+        int sum = 0;
+        for(int i = 0; i < array.length; i++) {
+            for(int j = 0; j < array[i].length; j++) {
+                sum = sum + array[i][j];
+            }
+        }
+        System.out.println(sum);
     }
 }
